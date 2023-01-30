@@ -21,7 +21,6 @@ const CheckoutPage = () => {
 				) : (
 					<StripeCheckout />
 				)}
-				
 			</Wrapper>
 		</main>
 	)
