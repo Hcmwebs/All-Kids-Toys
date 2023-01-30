@@ -8,15 +8,13 @@ import { CartProvider } from './context/cart_context'
 import { UserProvider } from './context/user_context'
 import { Auth0Provider } from '@auth0/auth0-react'
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
 	<React.StrictMode>
 		<Auth0Provider
-			domain={`${process.env.REACT_APP_REACTSTORE_DOMAIN}`}
-			clientId={`${process.env.REACT_APP_REACTSTORE_CLIENTID}`}
+			domain={process.env.REACT_APP_REACTSTORE_AUTH_DOMAIN}
+			clientId={process.env.REACT_APP_REACTSTORE_AUTH_CLIENTID}
 			redirectUri={window.location.origin}
 			cacheLocation='localstorage'>
 			<UserProvider>
@@ -30,5 +28,4 @@ root.render(
 			</UserProvider>
 		</Auth0Provider>
 	</React.StrictMode>
-
 )
