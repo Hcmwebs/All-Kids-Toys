@@ -6,31 +6,33 @@ Variables
 
 :root {
 	/* dark shades of primary color*/
-	--clr-primary-1: hsl(22, 28%, 21%);
-	--clr-primary-2: hsl(22, 28%, 29%);
-	--clr-primary-3: hsl(22, 28%, 37%);
-	--clr-primary-4: hsl(22, 28%, 45%);
+	--clr-primary-0: hsl(0, 0%, 0%);
+	--clr-primary-1: hsl(41, 100%, 10%);
+	--clr-primary-2:hsl(41, 100%, 20%);
+	--clr-primary-3: hsl(41, 100%, 30%);
+	--clr-primary-4: hsl(41, 100%, 40%);
 	/* primary/main color */
-	--clr-primary-5: hsl(22, 31%, 52%);
+	--clr-primary-5: hsl(41, 100%, 50%);
 	/* lighter shades of primary color */
-	--clr-primary-6: hsl(22, 31%, 60%);
-	--clr-primary-7: hsl(22, 31%, 67%);
-	--clr-primary-8: hsl(20, 31%, 74%);
-	--clr-primary-9: hsl(22, 31%, 81%);
-	--clr-primary-10: hsl(22, 31%, 88%);
+	--clr-primary-6: hsl(41, 100%, 60%);
+	--clr-primary-7: hsl(41, 100%, 70%);
+	--clr-primary-8: hsl(41, 100%, 80%);
+	--clr-primary-9: hsl(41, 100%, 90%);
+	--clr-primary-10: hsl(0, 0%, 100%);
 	/* darkest grey - used for headings */
-	--clr-grey-1: hsl(209, 61%, 16%);
-	--clr-grey-2: hsl(211, 39%, 23%);
-	--clr-grey-3: hsl(209, 34%, 30%);
-	--clr-grey-4: hsl(209, 28%, 39%);
+	--clr-grey-0: hsl(0, 0%, 0%);
+	--clr-grey-1: hsl(214, 12%, 12%);
+	--clr-grey-2: hsl(215, 10%, 23%);
+	--clr-grey-3:hsl(215, 11%, 35%);
+	--clr-grey-4:hsl(215, 10%, 46%);
 	/* grey used for paragraphs */
-	--clr-grey-5: hsl(210, 22%, 49%);
-	--clr-grey-6: hsl(209, 23%, 60%);
-	--clr-grey-7: hsl(211, 27%, 70%);
-	--clr-grey-8: hsl(210, 31%, 80%);
-	--clr-grey-9: hsl(212, 33%, 89%);
-	--clr-grey-10: hsl(210, 36%, 96%);
-	--clr-white: #fff;
+	--clr-grey-5: hsl(215, 14%, 58%);
+	--clr-grey-6:hsl(215, 14%, 66%);
+	--clr-grey-7:hsl(215, 15%, 75%);
+	--clr-grey-8: hsl(215, 14%, 83%);
+	--clr-grey-9: hsl(214, 16%, 92%);
+	--clr-grey-10: hsl(0, 0%, 100%);
+	--clr-white:hsl(0, 0%, 100%);
 	--clr-red-dark: hsl(360, 67%, 44%);
 	--clr-red-light: hsl(360, 71%, 66%);
 	--clr-green-dark: hsl(125, 67%, 44%);
@@ -132,7 +134,7 @@ p {
 }
 
 button {
-  font-family: inherit;
+	font-family: inherit;
 }
 /*  global classes */
 
@@ -197,7 +199,7 @@ button {
 	height: 0.25rem;
 	background: #49a6e9;
 	background: var(--clr-primary-5);
-	margin:0 auto;
+	margin: 0 auto;
 }
 .page-100 {
 	min-height: calc(100vh - 10rem);
