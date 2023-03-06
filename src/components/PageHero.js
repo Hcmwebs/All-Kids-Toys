@@ -21,7 +21,7 @@ const Wrapper = styled.section`
 	min-height: 20vh;
 	display: flex;
 	align-items: center;
-	color: var(--clr-primary-0);
+	color: var(--clr-primary-3);
 	a {
 		color: var(--clr-primary-4);
 		padding: 0.5rem;
