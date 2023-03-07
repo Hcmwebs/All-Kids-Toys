@@ -2,7 +2,7 @@
 require('dotenv').config()
 
 const stripe = require('stripe')(
-	process.env.REACT_APP_REACTSTORE_STRIPE_SECRET_KEY
+	process.env.REACT_APP_ALLKIDSTOYSSTORE_STRIPE_SECRET_KEY
 )
 
 exports.handler = async function (event, context) {
@@ -16,7 +16,7 @@ exports.handler = async function (event, context) {
 		try {
 			const paymentIntent = await stripe.paymentIntents.create({
 				amount: calculateOrderAmount(),
-				currency: 'usd',
+				currency: 'NZD',
 			})
 			return {
 				statusCode: 200,

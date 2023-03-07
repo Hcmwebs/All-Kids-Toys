@@ -1,7 +1,7 @@
 export const formatPrice = (number) => {
-	return new Intl.NumberFormat('en-US', {
+	return new Intl.NumberFormat('en-NZ', {
 		style: 'currency',
-		currency: 'USD',
+		currency: 'NZD',
 	}).format(number / 100)
 }
 
